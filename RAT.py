@@ -2,7 +2,7 @@ from API import *
 
 
 # Token/ID
-TelegramToken = '1299960654:AAHJcgiT3bGUM4PjkzThHo24q2j4bhw4YRs'
+TelegramToken = '1201835835:AAEI_EpECI-3fMVEDjfP1PxGR4URIQvNP_o'
 TelegramChatID = '612605794'
 
 
