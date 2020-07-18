@@ -12,7 +12,7 @@ pip3 install pyperclip
 pip3 install pywin32
 pip3 install mss
 pip3 install wmi
-
+pip3 install getmac
 pip3 install pyinstaller
 
 :cmd

